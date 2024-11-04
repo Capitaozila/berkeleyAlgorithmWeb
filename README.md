@@ -19,6 +19,8 @@ The website uses some animations created with rive.app. The animations can be fo
 
 <div align="center">
 
+## What is Rive.app? 
+
 https://github.com/user-attachments/assets/eb6eb342-2a05-43bb-a03b-27f5fc983fd9
 
 </div>
@@ -42,8 +44,8 @@ https://github.com/user-attachments/assets/eb6eb342-2a05-43bb-a03b-27f5fc983fd9
 
 Before you begin, you'll need to have the following tools installed on your computer:
 
-- 📝 [Visual Studio Code (VS Code)](https://code.visualstudio.com/)
-- 🛠️ [Git](https://git-scm.com/) - To clone the repository from GitHub.
+- [Visual Studio Code (VS Code)](https://code.visualstudio.com/)
+- [Git](https://git-scm.com/) - To clone the repository from GitHub.
 
 ## How to use this project
 
@@ -54,7 +56,7 @@ Follow the steps below to set up the project on your computer:
 Open your terminal and run the following command to clone this repository:
 
 ```bash
-git clone https://github.com/Capitaozila/BerkeleyClockWeb.git
+git clone https://github.com/Capitaozila/berkeleyAlgorithmWeb.git
 ```
 
 ### 2. Navigate to the project directory
@@ -63,7 +65,7 @@ After cloning, the project files will be in a new folder on your system. In orde
 
 #### 2.1. Identifying the directory name
 
-   When you clone a repository, it's downloaded into a folder with the same name as the repository on GitHub. In this case the repository name is **BerkeleyClockWeb**, so a new folder named **BerkeleyClockWeb** will be created.
+   When you clone a repository, it's downloaded into a folder with the same name as the repository on GitHub. In this case the repository name is **berkeleyAlgorithmWeb**, so a new folder named **berkeleyAlgorithmWeb** will be created.
 
 #### 2.2. Using the 'cd' command
 
@@ -73,10 +75,10 @@ After cloning, the project files will be in a new folder on your system. In orde
    cd folder name
    ```
 
-   Here the folder is called **BerkeleyClockWeb**, so
+   Here the folder is called **berkeleyAlgorithmWeb**, so
 
    ```bash
-   cd BerkeleyClockWeb
+   cd berkeleyAlgorithmWeb
    ```
 
    After this command, the terminal will be "inside" the project folder and you can execute commands specific to this project.
@@ -84,7 +86,7 @@ After cloning, the project files will be in a new folder on your system. In orde
    **Note:** If you have cloned the repository to a different location, specify the full path to the folder. For example:
 
    ```bash
-   cd /path/to/your/folder/BerkeleyClockWeb
+   cd /path/to/your/folder/berkeleyAlgorithmWeb
    ```
 
 ### 3. Open the project in VS Code
