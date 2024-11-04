@@ -7,6 +7,8 @@ This project is a simple implementation of the Berkeley algorithm in JavaScript.
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/Ping_for_time.png" alt="Example of the Berkeley algorithm in action" width="300"/>
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/Receive_time_from_slaves-1.png" alt="Example of the Berkeley algorithm in action" width="300"/>
 
+# Demo
+
 ![vvvv](https://github.com/user-attachments/assets/9209d2a7-357b-4b2f-884f-084935ec6905)
 
 </div>
