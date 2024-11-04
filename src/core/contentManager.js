@@ -20,6 +20,7 @@ export function updateOrderOfEvents(clientsData, avgTime) {
         delay,
         adjustedClientTime: adjustedTime,
         clientNumber,
+        secondDelay: secondDelayTime,
       } = client;
       return `
         <div class="padding-1 border margin article center-align">
@@ -27,8 +28,9 @@ export function updateOrderOfEvents(clientsData, avgTime) {
           <span class="bold">Client ${clientNumber}</span>
           <div>Local Time: ${localTime}</div>
           <div>Send Time: ${sendTime}</div>
-          <div>Calculated Delay: ${delay} minutes</div>
+          <div>Delay to Server: ${delay} minutes</div>
           <div>Adjusted Time: ${adjustedTime}</div>
+          <div>Send Delay: ${secondDelayTime} minutes</div>
         </div>`;
     })
     .join("");
