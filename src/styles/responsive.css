@@ -1,0 +1,6 @@
+@media (max-width: 600px) {
+  canvas {
+    /* display: none;
+    transition: display 0.5s ease-in-out; */
+  }
+}

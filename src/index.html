@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/beercss@3.7.10/dist/cdn/beer.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/typography.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/canvas.css" />
+    <title>Synchronizer</title>
+    <script src="https://unpkg.com/@rive-app/canvas@2.20.0"></script>
+  </head>
+
+  <body class="light responsive">
+    <div class="container center-align small-margin">
+      <div class="card rounded animate__animated animate__fadeIn">
+        <!-- <h4>Server</h4> -->
+        <h4><span id="serverTime" class="bold">--:--:--</span></h4>
+        <fieldset class="no-border">
+          <legend class="small-margin"><h2>Server Time</h2></legend>
+          <div class="field border round small">
+            <label class="small-margin large-text" for="manualServerTime">
+              Enter the local server time
+            </label>
+            <input
+              type="time"
+              id="manualServerTime"
+              title="Enter the local server time"
+              placeholder="HH:MM"
+            />
+          </div>
+        </fieldset>
+        <button
+          id="syncButton"
+          class="primary rounded small-margin same-size"
+          title="Synchronize all clocks"
+          type="button"
+        >
+          <span>Synchronize all</span>
+          <i class="fas fa-sync-alt"></i>
+          <div class="tooltip max">
+            <b>Synchronize Clocks</b>
+            <p>
+              Click to synchronize all clocks with the server time.
+            </p>
+          </div>
+        </button>
+        <button
+          id="generateButton"
+          class="secondary rounded small-margin same-size"
+          title="Generate times"
+          type="button"
+        >
+          <span>Generate times</span>
+          <i class="fas fa-random"></i>
+          <div class="tooltip max">
+            <b>Generate times</b>
+            <p>Generates random times for connected clients.</p>
+          </div>
+        </button>
+        <button
+          id="generateClientButton"
+          class="secondary rounded small-margin same-size"
+          title="Generate clients"
+          type="button"
+        >
+          <span>Generate clients</span>
+          <i class="fas fa-user-plus padding"></i>
+          <div class="tooltip max">
+            <b>Generate clients</b>
+            <p>Adds new clients to the system for synchronization.</p>
+          </div>
+        </button>
+        <button
+          id="removeClientButton"
+          class="secondary rounded small-margin same-size"
+          title="Remove clients"
+          type="button"
+        >
+          <span>Remove clients</span>
+          <i class="fas fa-user-minus padding"></i>
+          <div class="tooltip max">
+            <b>Remove clients</b>
+            <p>Removes the last client added to the system.</p>
+          </div>
+        </button>
+        <section
+          id="orderOfEvents"
+          class="large-text center-align middle-align round"
+        ></section>
+      </div>
+
+      <div id="clientsContainer" class="card"></div>
+
+      <nav id="clientsNavBar" class="bottom fixed"></nav>
+    </div>
+
+    <canvas id="canvas" width="500" height="500" class="canvas-left"></canvas>
+    <canvas id="canvas2" width="500" height="500" class="canvas-right"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./core/animations/buttonAnimations.js"></script>
+    <script type="module" src="./core/animations/riveCanvas.js"></script>
+    <script type="module" src="./core/sync/berkeleyAlgorithm.js"></script>
+    <script type="module" src="./core/sync/clientSync.js"></script>
+    <script type="module" src="./core/theme/themeToggle.js"></script>
+  </body>
+</html>

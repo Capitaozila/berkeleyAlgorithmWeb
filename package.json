@@ -1,0 +1,21 @@
+{
+  "name": "algoritmo_relogio",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite src",
+    "build": "vite build --emptyOutDir && npm run copy-images",
+    "copy-images": "xcopy src\\images dist\\images /E /I /Y"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@rive-app/canvas": "^2.23.3",
+    "beercss": "^3.7.12",
+    "gsap": "^3.12.5",
+    "material-dynamic-colors": "^1.1.2",
+    "sweetalert2": "^11.14.5"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  }
+}

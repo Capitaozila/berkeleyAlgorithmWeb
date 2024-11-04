@@ -1,0 +1,68 @@
+# Logs
+logs/
+*.log
+*.txt
+
+# IDE Files
+.idea/
+.vscode/
+.idx/
+.env
+
+# Build artifacts
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Parcel cache
+**/*.parcel-cache
+
+# Build directory
+dist/
+build/
+out/
+
+# Node modules
+node_modules/
+
+# firebase
+firebase.json
+firebase-debug.log
+.firebaserc
+.firebase/
+**/*.firebase
+
+# GitHub
+.github/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# Test coverage
+coverage/
+test-results/
+
+# System files
+Thumbs.db
+.DS_Store
+
+# Cache
+.cache/.firebase/

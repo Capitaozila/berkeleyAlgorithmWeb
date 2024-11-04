@@ -1,0 +1,24 @@
+html {
+  width: 100dvw;
+  height: 100dvh;
+}
+
+body {
+  font-family: var(--font);
+  scroll-behavior: smooth;
+}
+
+code,
+p.monospace,
+time {
+  font-family: var(--font-monospace);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+}

@@ -1,0 +1,17 @@
+.swal2-actions .swal2-confirm {
+  background-color: var(--primary);
+  border-radius: 0.75rem;
+}
+
+.swal2-content,
+.swal2-title {
+  color: var(--on-surface);
+}
+
+.swal2-popup {
+  background-color: var(--surface-container);
+  color: var(--on-surface);
+  width: max-content;
+  height: min-content;
+  border-radius: 0.75rem;
+}

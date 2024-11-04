@@ -1,0 +1,107 @@
+.blue-background {
+  background: var(--secondary-container);
+  color: var(--on-secondary-container);
+  font-family: var(--font-monospace);
+  padding: 40px;
+  border-radius: 0.75rem;
+  margin-bottom: 20px;
+  max-width: 95%;
+}
+
+.blur-background {
+  filter: blur(5px);
+  transition: filter 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+
+.animate__animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--outline);
+}
+
+.client-content {
+  display: none;
+}
+
+.client-content.active {
+  display: block;
+}
+
+.close-button {
+  background-color: var(--error);
+  color: var(--on-error);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.article {
+  width: max-content;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip {
+  background-color: var(--secondary-container);
+  color: var(--on-secondary-container);
+}
+
+header {
+  background-color: var(--secondary-container) !important;
+  color: var(--on-secondary-container) !important;
+  width: 80%;
+}
+
+input[type="number"],
+input[type="time"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: max-content;
+  min-width: 100px;
+  padding: 1rem;
+  background-color: var(--surface-container) !important;
+  color: var(--on-surface) !important;
+  border: 1px solid var(--outline-variant) !important;
+}
+
+.same-size {
+  width: 150px;
+  height: 50px;
+}
+
+#clientsNavBar {
+  background-color: var(--surface-container);
+  color: var(--on-surface);
+}
+
+#serverTime {
+  color: var(--primary);
+}
+
+dialog {
+  background-color: var(--background);
+  color: var(--on-background);
+}
