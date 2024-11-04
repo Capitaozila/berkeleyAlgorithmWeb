@@ -1,8 +1,9 @@
 const initialValues = {
-  manualServerTime: "15:05",
+  manualServerTime: "04:45",
   clients: [
-    { time: "14:45", sendTime: "14:45" },
-    { time: "14:55", sendTime: "15:15" },
+    { time: "05:30", sendTime: "05:30" },
+    { time: "05:45", sendTime: "05:45" },
+    { time: "06:00", sendTime: "06:00" },
     // Adicione mais clientes conforme necessário
   ],
 };
@@ -99,27 +100,29 @@ function calculateLogicalClock() {
 
 function runTests() {
   const testCases = [
+    // {
+    //   manualServerTime: "04:45",
+    //   clients: [
+    //     { time: "05:30", sendTime: "05:30" },
+    //     { time: "05:45", sendTime: "05:45" },
+    //     { time: "06:00", sendTime: "06:00" },
+    //   ],
+    // },
     {
-      manualServerTime: "15:05",
+      manualServerTime: "04:45",
       clients: [
-        { time: "14:45", sendTime: "14:45" },
-        { time: "14:55", sendTime: "15:15" },
+        { time: "06:15", sendTime: "06:15" },
+        { time: "06:45", sendTime: "06:45" },
+        { time: "07:15", sendTime: "07:15" },
       ],
     },
-    {
-      manualServerTime: "15:20",
-      clients: [
-        { time: "14:45", sendTime: "15:05" },
-        { time: "14:55", sendTime: "15:15" },
-      ],
-    },
-    {
-      manualServerTime: "10:30",
-      clients: [
-        { time: "10:00", sendTime: "10:00" },
-        { time: "10:10", sendTime: "10:40" },
-      ],
-    },
+    // {
+    //   manualServerTime: "10:30",
+    //   clients: [
+    //     { time: "10:00", sendTime: "10:00" },
+    //     { time: "10:10", sendTime: "10:40" },
+    //   ],
+    // },
   ];
 
   testCases.forEach((testCase, index) => {
