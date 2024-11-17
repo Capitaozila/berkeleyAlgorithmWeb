@@ -145,7 +145,6 @@ Now you can see changes to the code in real time in your browser, without having
 
 Feel free to edit the files in the `src` directory to customise the portfolio to your needs. The main sections of the site can be found and modified within this directory.
 
-## Technologies used
 
 ## Technologies used
 
