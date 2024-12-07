@@ -7,15 +7,15 @@
     "copy-images": "xcopy src\\images dist\\images /E /I /Y"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.6.0",
-    "@fortawesome/free-solid-svg-icons": "^6.6.0",
-    "@rive-app/canvas": "^2.23.3",
-    "beercss": "^3.7.12",
+    "@fortawesome/fontawesome-svg-core": "^6.7.1",
+    "@fortawesome/free-solid-svg-icons": "^6.7.1",
+    "@rive-app/canvas": "^2.23.11",
+    "beercss": "^3.7.14",
     "gsap": "^3.12.5",
     "material-dynamic-colors": "^1.1.2",
     "sweetalert2": "^11.14.5"
   },
   "devDependencies": {
-    "vite": "^5.4.10"
+    "vite": "^6.0.3"
   }
 }
