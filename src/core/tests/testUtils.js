@@ -38,7 +38,7 @@ function calculateLogicalClock() {
       console.error(
         `Valor do horário de envio do cliente ${index + 1} inválido: ${
           client.sendTime
-        }`
+        }`,
       );
       hasError = true;
       return null;
@@ -53,7 +53,7 @@ function calculateLogicalClock() {
     console.log(`Cliente ${index + 1} Delay (minutes):`, delay);
     console.log(
       `Adjusted Cliente ${index + 1} Time (minutes):`,
-      adjustedClientTime
+      adjustedClientTime,
     );
 
     return { adjustedClientTime, delay };
@@ -78,17 +78,17 @@ function calculateLogicalClock() {
 
     console.log(
       `Adjusted Cliente ${index + 1} Time (HH:MM):`,
-      formatTime(finalTime)
+      formatTime(finalTime),
     );
     return finalTime;
   });
 
   const totalAdjustedTime = finalAdjustedClientTimes.reduce(
     (sum, time) => sum + time,
-    adjustedServerTime
+    adjustedServerTime,
   );
   const logicalClock = Math.floor(
-    totalAdjustedTime / (finalAdjustedClientTimes.length + 1)
+    totalAdjustedTime / (finalAdjustedClientTimes.length + 1),
   );
 
   console.log("Novo Clock Lógico:", formatTime(logicalClock));

@@ -25,7 +25,10 @@ export function calculateLogicalClock(initialValues) {
   }
 
   // Calcular o clock lógico com base nos horários locais dos clientes
-  const totalClientTime = clientTimes.reduce((sum, client) => sum + client.clientTime, 0);
+  const totalClientTime = clientTimes.reduce(
+    (sum, client) => sum + client.clientTime,
+    0,
+  );
   const logicalClock = Math.floor(totalClientTime / clientTimes.length);
   console.log("New Logical Clock:", formatTime(logicalClock));
 
@@ -35,8 +38,14 @@ export function calculateLogicalClock(initialValues) {
     const adjustedClientTime = client.clientTime + delay;
     const secondDelay = client.clientSendTime - client.clientTime;
     console.log(`Client ${client.clientNumber} Delay (minutes):`, delay);
-    console.log(`Adjusted Client ${client.clientNumber} Time (minutes):`, adjustedClientTime);
-    console.log(`Client ${client.clientNumber} Second Delay (minutes):`, secondDelay);
+    console.log(
+      `Adjusted Client ${client.clientNumber} Time (minutes):`,
+      adjustedClientTime,
+    );
+    console.log(
+      `Client ${client.clientNumber} Second Delay (minutes):`,
+      secondDelay,
+    );
     return {
       time: formatTime(client.clientTime),
       adjustedClientTime,
@@ -51,7 +60,9 @@ export function calculateLogicalClock(initialValues) {
   adjustedClientTimes.sort((a, b) => a.secondDelay - b.secondDelay);
 
   // Calcular o maior valor de secondDelay
-  const maxSecondDelay = Math.max(...adjustedClientTimes.map(client => client.secondDelay));
+  const maxSecondDelay = Math.max(
+    ...adjustedClientTimes.map((client) => client.secondDelay),
+  );
 
   // Ajustar o tempo do servidor com base no maior secondDelay
   const adjustedServerTime = serverTime + maxSecondDelay;
@@ -59,8 +70,13 @@ export function calculateLogicalClock(initialValues) {
   console.log("Adjusted Server Time (minutes):", adjustedServerTime);
 
   // Recalcular o clock lógico com base nos tempos ajustados dos clientes e do servidor
-  const totalAdjustedTime = adjustedClientTimes.reduce((sum, client) => sum + client.adjustedClientTime, adjustedServerTime);
-  const newLogicalClock = Math.floor(totalAdjustedTime / (adjustedClientTimes.length + 1));
+  const totalAdjustedTime = adjustedClientTimes.reduce(
+    (sum, client) => sum + client.adjustedClientTime,
+    adjustedServerTime,
+  );
+  const newLogicalClock = Math.floor(
+    totalAdjustedTime / (adjustedClientTimes.length + 1),
+  );
   console.log("Recalculated Logical Clock:", formatTime(newLogicalClock));
 
   return {

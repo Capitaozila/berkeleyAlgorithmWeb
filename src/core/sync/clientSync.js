@@ -89,7 +89,7 @@ export function removeThemeToggleButton() {
       () => {
         themeToggleButton.remove();
       },
-      { once: true }
+      { once: true },
     );
   }
 }
@@ -153,7 +153,7 @@ export function removeClient() {
       () => {
         clientDiv.remove();
       },
-      { once: true }
+      { once: true },
     );
 
     const navBar = document.getElementById("clientsNavBar");
@@ -164,7 +164,7 @@ export function removeClient() {
       () => {
         lastClientLink.remove();
       },
-      { once: true }
+      { once: true },
     );
 
     console.log(`Client ${clientToRemove.id} removed`);
@@ -178,7 +178,7 @@ export function generateRandomTimes() {
     const randomHour = String(Math.floor(Math.random() * 24)).padStart(2, "0");
     const randomMinute = String(Math.floor(Math.random() * 60)).padStart(
       2,
-      "0"
+      "0",
     );
     const randomTime = `${randomHour}:${randomMinute}`;
     document.getElementById(`client${client.id}Time`).value = randomTime;
@@ -193,7 +193,7 @@ export function generateRandomTimes() {
     document.getElementById(`client${client.id}SendTime`).value = sendTime;
 
     console.log(
-      `Client ${client.id} - Generated local time: ${randomTime}, Generated send time: ${sendTime}`
+      `Client ${client.id} - Generated local time: ${randomTime}, Generated send time: ${sendTime}`,
     );
   });
 }

@@ -17,10 +17,10 @@ export function syncTimes() {
     manualServerTime,
     clients: clients.map((client) => {
       const clientTime = document.getElementById(
-        `client${client.id}Time`
+        `client${client.id}Time`,
       ).value;
       const sendTime = document.getElementById(
-        `client${client.id}SendTime`
+        `client${client.id}SendTime`,
       ).value;
 
       if (!clientTime || !sendTime) {

@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
           gsap.fromTo(
             icon,
             { y: -10 },
-            { y: 0, duration: 0.5, ease: "bounce.out" }
+            { y: 0, duration: 0.5, ease: "bounce.out" },
           );
         });
       } else if (button === generateClientButton) {
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
           gsap.fromTo(
             icon,
             { x: -10 },
-            { x: 0, duration: 0.5, ease: "elastic.out(1, 0.3)" }
+            { x: 0, duration: 0.5, ease: "elastic.out(1, 0.3)" },
           );
         });
       } else if (button === removeClientButton) {

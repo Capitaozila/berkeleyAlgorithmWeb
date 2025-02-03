@@ -42,12 +42,12 @@ function initializeRiveCanvas(canvasId, src, stateMachine) {
 const r = initializeRiveCanvas(
   "canvas",
   "./images/lil_guy_azul_branco.riv",
-  "State Machine 1"
+  "State Machine 1",
 );
 const r2 = initializeRiveCanvas(
   "canvas2",
   "./images/lil_guy_vermelho_versao_dois.riv",
-  "State Machine 1"
+  "State Machine 1",
 );
 
 window.addEventListener("resize", () => {

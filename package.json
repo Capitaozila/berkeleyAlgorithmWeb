@@ -2,9 +2,10 @@
   "name": "algoritmo_relogio",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite src",
+    "start": "vite src",
     "build": "vite build --emptyOutDir && npm run copy-images",
-    "copy-images": "xcopy src\\images dist\\images /E /I /Y"
+    "copy-images": "xcopy src\\images dist\\images /E /I /Y",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
@@ -16,6 +17,7 @@
     "sweetalert2": "^11.14.5"
   },
   "devDependencies": {
+    "prettier": "^3.4.2",
     "vite": "^6.0.3"
   }
 }

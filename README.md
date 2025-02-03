@@ -19,12 +19,11 @@ The website uses some animations created with rive.app. The animations can be fo
 
 <div align="center">
 
-## What is Rive.app? 
+## What is Rive.app?
 
 https://github.com/user-attachments/assets/eb6eb342-2a05-43bb-a03b-27f5fc983fd9
 
 </div>
-
 
 ## Table of contents
 
@@ -65,29 +64,29 @@ After cloning, the project files will be in a new folder on your system. In orde
 
 #### 2.1. Identifying the directory name
 
-   When you clone a repository, it's downloaded into a folder with the same name as the repository on GitHub. In this case the repository name is **berkeleyAlgorithmWeb**, so a new folder named **berkeleyAlgorithmWeb** will be created.
+When you clone a repository, it's downloaded into a folder with the same name as the repository on GitHub. In this case the repository name is **berkeleyAlgorithmWeb**, so a new folder named **berkeleyAlgorithmWeb** will be created.
 
 #### 2.2. Using the 'cd' command
 
-   In the Terminal, use the cd command to access this new folder. The basic format of the command is
+In the Terminal, use the cd command to access this new folder. The basic format of the command is
 
-   ```bash
-   cd folder name
-   ```
+```bash
+cd folder name
+```
 
-   Here the folder is called **berkeleyAlgorithmWeb**, so
+Here the folder is called **berkeleyAlgorithmWeb**, so
 
-   ```bash
-   cd berkeleyAlgorithmWeb
-   ```
+```bash
+cd berkeleyAlgorithmWeb
+```
 
-   After this command, the terminal will be "inside" the project folder and you can execute commands specific to this project.
+After this command, the terminal will be "inside" the project folder and you can execute commands specific to this project.
 
-   **Note:** If you have cloned the repository to a different location, specify the full path to the folder. For example:
+**Note:** If you have cloned the repository to a different location, specify the full path to the folder. For example:
 
-   ```bash
-   cd /path/to/your/folder/berkeleyAlgorithmWeb
-   ```
+```bash
+cd /path/to/your/folder/berkeleyAlgorithmWeb
+```
 
 ### 3. Open the project in VS Code
 
@@ -98,9 +97,10 @@ code .
 ```
 
 **Explanation**
+
 - `code`: Opens VS Code from the terminal.
 - `.`: Represents the current directory, so this command opens the project directory directly in VS Code.
-If the `code` command doesn't work, you may need to add it to your PATH:
+  If the `code` command doesn't work, you may need to add it to your PATH:
 
 1. Open VS Code.
 2. Press **Ctrl + Shift + P** (or **Cmd + Shift + P** on MacOS) to open the command palette.
@@ -115,11 +115,11 @@ You can use BeerCSS either via CDN or NPM, here we use NPM.
 
 #### 4.2. Installing via NPM
 
-   We'll use NPM to manage the project's dependencies. Run the following commands to install BeerCSS and Material Dynamic Colours
+We'll use NPM to manage the project's dependencies. Run the following commands to install BeerCSS and Material Dynamic Colours
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 ### 5. Running the project
 
@@ -127,6 +127,7 @@ Once the dependencies are installed, you can run the project locally using parce
 Follow the steps below:
 
 1. **Start the local server:**
+
    - With the project open in VS Code, open the terminal and type
 
    ```bash
@@ -144,7 +145,6 @@ Now you can see changes to the code in real time in your browser, without having
 ### 6. Customise the project
 
 Feel free to edit the files in the `src` directory to customise the portfolio to your needs. The main sections of the site can be found and modified within this directory.
-
 
 ## Technologies used
 

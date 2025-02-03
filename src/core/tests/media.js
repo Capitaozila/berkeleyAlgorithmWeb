@@ -9,10 +9,10 @@ function convertToTimeString(minutes) {
   const hours = Math.floor(minutes / 60);
   const remainingMinutes = minutes % 60;
   const timeString = `${String(hours).padStart(2, "0")}:${String(
-    remainingMinutes
+    remainingMinutes,
   ).padStart(2, "0")}`;
   console.log(
-    `Convertendo ${minutes} minutos de volta para "hh:mm": ${timeString}`
+    `Convertendo ${minutes} minutos de volta para "hh:mm": ${timeString}`,
   );
   return timeString;
 }
